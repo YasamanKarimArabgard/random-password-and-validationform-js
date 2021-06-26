@@ -18,18 +18,21 @@
                 <ul>
                 <li id="li">
                     <label for="#">Username</label>
-                        <input type="text" name="username" id="username"></label>
+                        <input type="text" name="username" id="username" autocomplete="off"></label>
                         <span id="usernameerror"></span>
                 </li>
                 <li>
                     <label for="#">Phone number</label>
-                        <input type="text" name="phonenumber" id="phonenumber"></label>
+                        <input type="text" name="phonenumber" id="phonenumber" autocomplete="off"></label>
                         <span id="phoneerror"></span>
                 </li>
                 <li>
                     <label for="#">Password</label>
-                        <input type="text" name="password" id="password"></label>
-                        <span id="passworderror"></span>
+                        <div class="password_box">
+                            <input type="text" name="password" id="password" autocomplete="off">
+                            <button id="pass-btn" type="button">random</button>
+                        </div>
+                        <span id="passworderror"></span>       
                 </li>
             </ul>
             <button type="button" id="submitButton">Submit</button>
